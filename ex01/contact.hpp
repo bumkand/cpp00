@@ -1,0 +1,24 @@
+#include <cctype>
+#include <iostream>
+#include <iomanip>
+
+class Contact
+{
+	private:
+		std::string _firstName;
+		std::string _lastName;
+		std::string _nickName;
+		std::string _phoneNumber;
+		std::string _darkestSecret;
+	public:
+		void setFirstName(std::string str);
+		void setLastName(std::string str);
+		void setNickName(std::string str);
+		void setPhoneNumber(std::string str);
+		void setDarkestSecret(std::string str);
+		std::string getFirstName(void) const;
+		std::string getLastName(void) const;
+		std::string getNickName(void) const;
+		std::string getPhoneNumber(void) const;
+		std::string getDarkestSecret(void) const;
+};
