@@ -1,3 +1,6 @@
+#ifndef PHONEBOOK_HPP
+#define PHONEBOOK_HPP
+
 #include "contact.hpp"
 
 class PhoneBook
@@ -13,3 +16,5 @@ class PhoneBook
 		void addNewContact(void);
 		void searchPhoneBook(void) const;
 };
+
+#endif

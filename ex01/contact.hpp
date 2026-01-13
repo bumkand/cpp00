@@ -1,6 +1,10 @@
+#ifndef CONTACT_HPP
+#define CONTACT_HPP
+
 #include <cctype>
 #include <iostream>
 #include <iomanip>
+#include <string>
 
 class Contact
 {
@@ -22,3 +26,5 @@ class Contact
 		std::string getPhoneNumber(void) const;
 		std::string getDarkestSecret(void) const;
 };
+
+#endif
