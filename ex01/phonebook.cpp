@@ -9,11 +9,11 @@ PhoneBook::PhoneBook(void)
 std::string PhoneBook::_getInput(std::string str) const
 {
 	std::string input = "";
-	while (input.empty())
+	while (input.empty() && !std::cin.eof())
 	{
 		std::cout << str << std::endl;
 		if (!std::getline(std::cin, input))
-			break ;
+			return "";
 	}
 	return (input);
 }
@@ -39,7 +39,7 @@ void PhoneBook::addNewContact(void)
 
 std::string PhoneBook::_formatString(std::string str) const
 {
-	if (str.length() > 9)
+	if (str.length() > 10)
 		return  (str.substr(0, 9) + ".");
 	return (str);
 }

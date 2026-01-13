@@ -8,20 +8,14 @@ int	main()
 	while (true)
 	{
 		std::cout << "Enter command (ADD, SEARCH, EXIT): ";
-		if (!std::getline(std::cin, command))
+		if (!std::getline(std::cin, command) || command == "EXIT")
 			break;
 		if (command == "ADD")
-		{
 			my_Phonebook.addNewContact();
-		}
 		else if (command == "SEARCH")
-        {
             my_Phonebook.searchPhoneBook();
-        }
-        else if (command == "EXIT")
-        {
-            break;
-        }
+        if (std::cin.eof())
+			break;
 	}
 	return (0);
 }
