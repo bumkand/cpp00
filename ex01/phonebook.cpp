@@ -54,7 +54,11 @@ void PhoneBook::searchPhoneBook(void) const
 	std::cout << "|     Index|First Name| Last Name|  Nickname|" << std::endl;
 	for (int i = 0; i < _count; i++)
 	{
-		std::cout << "|" << std::setw(10) << i << "|" << std::setw(10) << _formatString(_contacts[i].getFirstName()) << "|" << std::setw(10) << _formatString(_contacts[i].getLastName()) << "|" << std::setw(10) << _formatString(_contacts[i].getNickName()) << "|" << std::endl;
+		std::cout << "|" << std::setw(10) << i \
+			<< "|" << std::setw(10) << _formatString(_contacts[i].getFirstName()) \
+			<< "|" << std::setw(10) << _formatString(_contacts[i].getLastName()) \
+			<< "|" << std::setw(10) << _formatString(_contacts[i].getNickName()) \
+			<< "|" << std::endl;
 	}
 	std::string indexStr = _getInput("Enter index to display details");
 	if (indexStr.length() == 1 && indexStr[0] >= '0' && indexStr[0] <= '7')
