@@ -13,6 +13,7 @@ class PhoneBook
 		std::string _formatString(std::string str) const;
 	public:
 		PhoneBook();
+		~PhoneBook(void);
 		void addNewContact(void);
 		void searchPhoneBook(void) const;
 };

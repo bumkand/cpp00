@@ -1,5 +1,14 @@
 #include "phonebook.hpp"
 
+Contact::Contact()
+{
+}
+
+Contact::~Contact(void)
+{
+	//std::cout << "Contact destructed" << std::endl;
+}
+
 void Contact::setFirstName(std::string str)
 {
 	_firstName = str;

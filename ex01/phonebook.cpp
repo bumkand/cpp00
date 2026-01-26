@@ -6,6 +6,11 @@ PhoneBook::PhoneBook(void)
 	_count = 0;
 }
 
+PhoneBook::~PhoneBook(void)
+{
+	//std::cout << "PhoneBook destructed" << std::endl;
+}
+
 std::string PhoneBook::_getInput(std::string str) const
 {
 	std::string input = "";
